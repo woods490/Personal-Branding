@@ -1,0 +1,26 @@
+@font-face{
+    font-family:'FontMain';
+    src: url('../Helvetica/Helvetica.ttf')
+}
+
+body{
+    font-family: 'FontMain' !important;
+}
+
+.btn-nav{
+    color: #000000;
+}
+
+.btn-nav::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000000;
+    transition: width .3s;
+}
+
+.btn-nav:hover::after{
+    width: 100%;
+    transition: width .3s;
+}

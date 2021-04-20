@@ -1,0 +1,92 @@
+@font-face{
+    font-family:'FontMain';
+    src: url('../Helvetica/Helvetica.ttf')
+}
+
+body{
+    font-family: 'FontMain' !important;
+}
+
+.btn-nav{
+    color: #000000;
+}
+
+.btn-nav::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000000;
+    transition: width .3s;
+}
+
+.btn-nav:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+.penghias{
+    width: 100px;
+    height: 62.6px;
+}
+
+.judul{
+    color: black;
+    font-weight: bolder;
+}
+
+.judul-phn{
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+.isi{
+    color: black;
+    font-weight: normal;
+}
+
+.isi-phn{
+    color: black;
+    font-weight: normal;
+    text-align: center;
+}
+
+.hdr-mrgn{
+    margin-left: 1.75%;
+}
+
+@media only screen and (max-width: 1200px){
+    .btn-nav:hover::after{
+        width: 17%;
+        transition: width .3s;
+    }
+
+    .pong-desktop{
+        display: none;
+    }
+
+    .penghias{
+        width: 60px;
+        height: 37.56px;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .hdr-phn{
+        text-align: center;
+    }
+
+    .hdr-mrgn{
+        margin-left: 1%;
+    }
+}
+
+@media only screen and (min-width: 1201px){
+    .phone{
+        display: none;
+    }
+}
